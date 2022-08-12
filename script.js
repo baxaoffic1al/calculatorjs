@@ -36,7 +36,7 @@ calcBtns.map((btn)=> {
  if (javob == 'C') {
       clear()
     }else if(javob == '+/-') {
-      
+      plusMinus()
     }else if(javob == 'Ocir') {
       qayt()
     }else if(javob == '=') {
@@ -80,6 +80,10 @@ function numSize() {
   }else if(calcScreen.innerHTML.length < 9) {
     calcScreen.style.fontSize = '40px'
   }
+}
+
+function plusMinus() {
+  calcScreen.innerHTML = parseFloat(calcScreen.innerHTML) * -1    
 }
 
 
